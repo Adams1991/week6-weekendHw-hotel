@@ -99,6 +99,14 @@ public class HotelTest {
         assertEquals(bedroom, hotel.getBedroomByType(RoomTypes.SINGLE));
     }
 
+    @Test
+    public void canAddGuestToRoom(){
+        hotel.addBedroom(bedroom);
+        Bedroom availableRoom = hotel.getBedroomByType(RoomTypes.SINGLE);
+        availableRoom.addGuest(guest);
+        assertEquals(1, availableRoom.numberOfGuestsInRoom());
+    }
+
 
 
 }

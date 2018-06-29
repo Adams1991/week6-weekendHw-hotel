@@ -1,5 +1,6 @@
 package Hotel;
 
+import Hotel.People.Guest;
 import Hotel.RoomTypes.Bedroom;
 import Hotel.RoomTypes.ConferenceRoom;
 import Hotel.RoomTypes.DiningRoom;
@@ -64,11 +65,6 @@ public class Hotel {
         }
         return availableRoom;
     }
-
-
-
-
-
 
 
 

@@ -33,4 +33,8 @@ public abstract class Room {
     }
 
 
+    public void addGuest(Guest guest) {
+        guests.add(guest);
+    }
+
 }
