@@ -60,7 +60,7 @@ public class Hotel {
     public Bedroom getBedroomByType(RoomTypes roomType) {
         Bedroom availableRoom = null;
         for (Bedroom bedroom : bedrooms) {
-            if (bedroom.getRoomType() == roomType)
+            if (bedroom.getRoomType() == roomType && !bedroom.isFull())
                 availableRoom = bedroom;
         }
         return availableRoom;

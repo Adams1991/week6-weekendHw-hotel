@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f4ba01-ae0a-4687-8a55-f5cf305be203" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hotel/Room.java" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Room.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/BedroomTest.java" afterPath="$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/BedroomTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -22,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Hotel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Hotel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
@@ -74,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BedroomTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BedroomTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/BedroomTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9">
+            <state relative-caret-position="-10">
               <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
               <folding>
                 <element signature="e#602#603#0" expanded="true" />
@@ -426,12 +425,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Hotel/RoomTypes/Bedroom.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/People/Guest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Hotel/People/GuestTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
         <option value="$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/ConferenceRoomTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/DiningRoomTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Hotel/HotelTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Hotel/Room.java" />
         <option value="$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/BedroomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
       </list>
     </option>
   </component>
@@ -504,45 +503,6 @@
               <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="RoomTypes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weekendHWHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="weekendHWHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weekendHWHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weekendHWHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="People" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weekendHWHotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weekendHW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Hotel" type="462c0819:PsiDirectoryNode" />
               <item name="RoomTypes" type="462c0819:PsiDirectoryNode" />
@@ -836,11 +796,11 @@
     <history-entry file="All_in_weekendHWHotel_test - 2018.06.29 at 16h 08m 26s.xml">
       <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BedroomTest_canCheckIsFull__false - 2018.06.29 at 15h 58m 23s.xml">
-      <configuration name="BedroomTest.canCheckIsFull__false" configurationId="JUnit" />
+    <history-entry file="All_in_weekendHWHotel_test - 2018.06.29 at 16h 10m 03s.xml">
+      <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BedroomTest_canCheckIsFull__false - 2018.06.29 at 15h 58m 42s.xml">
-      <configuration name="BedroomTest.canCheckIsFull__false" configurationId="JUnit" />
+    <history-entry file="All_in_weekendHWHotel_test - 2018.06.29 at 16h 11m 58s.xml">
+      <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="BedroomTest_canCheckIsFull__false - 2018.06.29 at 16h 03m 23s.xml">
       <configuration name="BedroomTest.canCheckIsFull__false" configurationId="JUnit" />
@@ -1041,34 +1001,8 @@
         <state relative-caret-position="120">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#809#810#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#917#918#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1080#1081#0" expanded="true" />
-            <element signature="e#1123#1124#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1220#1221#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1424#1425#0" expanded="true" />
-            <element signature="e#1475#1476#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="false" />
+            <element signature="e#243#244#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1097,7 +1031,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Hotel/RoomTypes/BedroomTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
+        <state relative-caret-position="-10">
           <caret line="57" column="10" lean-forward="true" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
           <folding>
             <element signature="e#602#603#0" expanded="true" />
@@ -1114,6 +1048,32 @@
             <element signature="e#1351#1352#0" expanded="true" />
             <element signature="e#1704#1705#0" expanded="true" />
             <element signature="e#1756#1757#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#886#887#0" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#996#997#0" expanded="true" />
+            <element signature="e#1043#1044#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1123#1124#0" expanded="true" />
+            <element signature="e#1164#1165#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1263#1264#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
+            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1475#1476#0" expanded="true" />
           </folding>
         </state>
       </provider>
