@@ -46,18 +46,30 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetBedrooms(){
+    public void canGetBedroomsArray(){
         assertEquals(bedrooms, hotel.getBedrooms());
     }
 
     @Test
-    public void canGetDiningRooms(){
+    public void canGetDiningRoomsArray(){
         assertEquals(bedrooms, hotel.getBedrooms());
     }
 
     @Test
-    public void canGetConferenceRooms(){
+    public void canGetConferenceRoomsArray(){
         assertEquals(bedrooms, hotel.getBedrooms());
     }
+
+   @Test
+   public void canCheckAmountOfBedrooms(){
+        assertEquals(0, hotel.getAmountOfBedrooms());
+   }
+
+//    @Test
+//    public void canAddRoomToArray(){
+//        assertEquals();
+//    }
+
+
 
 }

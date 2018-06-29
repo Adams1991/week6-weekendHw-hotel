@@ -28,4 +28,9 @@ public class Hotel {
     public ArrayList<Bedroom> getBedrooms() {
         return bedrooms;
     }
+
+
+    public int getAmountOfBedrooms() {
+        return bedrooms.size();
+    }
 }
