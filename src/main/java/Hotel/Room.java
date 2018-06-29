@@ -35,9 +35,9 @@ public abstract class Room {
         guests.add(guest);
     }
 
-    public boolean isFull() {
+    public boolean isBooked() {
         boolean answer = false;
-        if (numberOfGuestsInRoom() >= this.capacity){answer = true;}
+        if (guests.size() > 0){answer = true;}
         return answer;
     }
 

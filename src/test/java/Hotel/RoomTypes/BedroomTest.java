@@ -74,13 +74,13 @@ public class BedroomTest {
 
     @Test
     public void canCheckIsFull__true(){
-        assertEquals(true, bedroom.isFull());
+        assertEquals(true, bedroom.isBooked());
     }
 
     @Test
     public void canCheckIsFull__false(){
         bedroom.emptyRoom();
-        assertEquals(false, bedroom.isFull());
+        assertEquals(false, bedroom.isBooked());
     }
 
     @Test
