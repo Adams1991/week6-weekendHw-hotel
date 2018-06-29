@@ -23,8 +23,8 @@ public class DiningRoomTest {
 
 
     @Test
-    public void canGetGuests() {
-        assertEquals(guest,diningRoom.getGuests());
+    public void cangetGuest() {
+        assertEquals(1, diningRoom.numberOfGuestsinRoom());
     }
 
     @Test
@@ -35,7 +35,7 @@ public class DiningRoomTest {
     @Test
     public void canSetCapacity() {
         diningRoom.setCapacity(14);
-        assertEquals(12, diningRoom.getCapacity());
+        assertEquals(14, diningRoom.getCapacity());
     }
 
 }
