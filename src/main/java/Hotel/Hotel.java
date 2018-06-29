@@ -21,4 +21,7 @@ public class Hotel {
                      this.takings = takings;
     }
 
+    public double getTakings() {
+        return takings;
+    }
 }

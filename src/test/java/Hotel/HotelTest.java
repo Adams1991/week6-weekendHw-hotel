@@ -6,6 +6,7 @@ import Hotel.RoomTypes.ConferenceRoom;
 import Hotel.RoomTypes.DiningRoom;
 import Hotel.RoomTypes.RoomTypes;
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 
@@ -37,6 +38,11 @@ public class HotelTest {
         conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
         diningRoom = new DiningRoom(12, guests);
         hotel = new Hotel(bedrooms,conferenceRooms,diningRooms, 100000);
+    }
+
+    @Test
+    public void canGetTakings(){
+        assertEquals(100000, hotel.getTakings(), 0.01);
     }
 
 
