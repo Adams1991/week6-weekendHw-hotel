@@ -17,4 +17,7 @@ public class Bedroom extends Room {
     }
 
 
+    public double getNightlyRate() {
+        return nightlyRate;
+    }
 }

@@ -27,19 +27,27 @@ public class BedroomTest {
     }
 
     @Test
-    public void numberOfGuestsInRoom() {
+    public void canGetNumberOfGuestsInRoom() {
         assertEquals(1, bedroom.numberOfGuestsInRoom());
     }
 
     @Test
-    public void getCapacity() {
+    public void canGetCapacity() {
+        assertEquals(1, bedroom.getCapacity());
     }
 
     @Test
-    public void setCapacity() {
+    public void canSetCapacity() {
+        bedroom.setCapacity(14);
+        assertEquals(14, bedroom.getCapacity());
     }
 
     @Test
-    public void getGuests() {
+    public void canGetNightlyRate() {
+        assertEquals(30.00, bedroom.getNightlyRate(), 0.01);
     }
+
+
+
+
 }
