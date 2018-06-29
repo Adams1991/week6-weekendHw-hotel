@@ -75,6 +75,12 @@ public class BedroomTest {
         assertEquals(true, bedroom.isFull());
     }
 
+    @Test
+    public void canEmptyRoom(){
+        bedroom.emptyRoom();
+        assertEquals(0, bedroom.numberOfGuestsInRoom() );
+    }
+
 //    @Test
 //    public void canCheckIsFull__false(){
 //        assertEquals(false, bedroom.isFull());

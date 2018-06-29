@@ -8,7 +8,7 @@ public abstract class Room {
     public int capacity;
     public ArrayList<Guest> guests;
 
-    public Room(int capacity, ArrayList<Guest> guests){
+    public Room(int capacity, ArrayList<Guest> guests) {
         this.capacity = capacity;
         this.guests = guests;
     }
@@ -35,13 +35,15 @@ public abstract class Room {
         guests.add(guest);
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         boolean answer = false;
         if (this.numberOfGuestsInRoom() <= this.capacity)
             answer = true;
         return answer;
     }
 
-
+    public void emptyRoom(){
+        guests.clear();
+    }
 
 }
