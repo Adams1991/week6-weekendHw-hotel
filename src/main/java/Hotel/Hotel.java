@@ -33,4 +33,25 @@ public class Hotel {
     public int getAmountOfBedrooms() {
         return bedrooms.size();
     }
+
+    public void addBedroom(Bedroom bedroom) {
+        bedrooms.add(bedroom);
+    }
+
+    public int getAmountOfDiningRomms() {
+        return diningRooms.size();
+    }
+
+    public void addDiningRoom(DiningRoom diningRoom) {
+        diningRooms.add(diningRoom);
+    }
+
+
+    public int getAmountOfConferenceRooms() {
+        return conferenceRooms.size();
+    }
+
+    public void addConferenceRoom(ConferenceRoom conferenceRoom) {
+        conferenceRooms.add(conferenceRoom);
+    }
 }
