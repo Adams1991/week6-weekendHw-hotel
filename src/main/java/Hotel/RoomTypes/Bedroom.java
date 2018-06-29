@@ -10,9 +10,10 @@ public class Bedroom extends Room {
     private RoomTypes roomType;
     private double nightlyRate;
 
-    public Bedroom(int capacity, ArrayList<Guest> guests,  double nightlyRate) {
-        super(capacity, guests);
-        this.nightlyRate = nightlyRate;
+    public Bedroom(ArrayList<Guest> guests, RoomTypes roomType) {
+        super(roomType.getCapacity(), guests);
+        this.nightlyRate = roomType.getNightlyRate() ;
+        this.roomType = roomType;
     }
 
 
