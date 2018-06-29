@@ -37,8 +37,7 @@ public abstract class Room {
 
     public boolean isFull() {
         boolean answer = false;
-        if (this.numberOfGuestsInRoom() <= this.capacity)
-            answer = true;
+        if (numberOfGuestsInRoom() >= this.capacity){answer = true;}
         return answer;
     }
 

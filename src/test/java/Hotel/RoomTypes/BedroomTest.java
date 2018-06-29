@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 public class BedroomTest {
     ArrayList<Guest> guests;
     Bedroom bedroom;
+    Bedroom bedroom2;
     Guest guest;
 
     @Before
@@ -19,6 +20,7 @@ public class BedroomTest {
         guests = new ArrayList<>();
         guests.add(guest);
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
+        bedroom2 = new Bedroom(guests, RoomTypes.DOUBLE, 300);
     }
 
     @Test
@@ -76,15 +78,18 @@ public class BedroomTest {
     }
 
     @Test
+    public void canCheckIsFull__false(){
+        bedroom.emptyRoom();
+        assertEquals(false, bedroom.isFull());
+    }
+
+    @Test
     public void canEmptyRoom(){
         bedroom.emptyRoom();
         assertEquals(0, bedroom.numberOfGuestsInRoom() );
     }
 
-//    @Test
-//    public void canCheckIsFull__false(){
-//        assertEquals(false, bedroom.isFull());
-//    }
+
 
 
 
