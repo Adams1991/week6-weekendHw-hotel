@@ -7,12 +7,10 @@ import java.util.ArrayList;
 public abstract class Room {
     public int capacity;
     public ArrayList<Guest> guests;
-//    public boolean occupied;
 
     public Room(int capacity, ArrayList<Guest> guests){
         this.capacity = capacity;
         this.guests = guests;
-//        this.occupied = false;
     }
 
     public int numberOfGuestsInRoom() {
@@ -36,5 +34,14 @@ public abstract class Room {
     public void addGuest(Guest guest) {
         guests.add(guest);
     }
+
+    public boolean isFull(){
+        boolean answer = false;
+        if (this.numberOfGuestsInRoom() <= this.capacity)
+            answer = true;
+        return answer;
+    }
+
+
 
 }

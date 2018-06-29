@@ -70,6 +70,16 @@ public class BedroomTest {
 
     }
 
+    @Test
+    public void canCheckIsFull__true(){
+        assertEquals(true, bedroom.isFull());
+    }
+
+//    @Test
+//    public void canCheckIsFull__false(){
+//        assertEquals(false, bedroom.isFull());
+//    }
+
 
 
 

@@ -20,8 +20,10 @@ public class HotelTest {
     ArrayList<ConferenceRoom> conferenceRooms;
     Hotel hotel;
     Guest guest;
+    Guest guest2;
     ArrayList<Guest> guests;
     Bedroom bedroom;
+    Bedroom bedroom2;
     DiningRoom diningRoom;
     ConferenceRoom conferenceRoom;
 
@@ -30,11 +32,13 @@ public class HotelTest {
     @Before
     public void setUp() {
         guest = new Guest("Bob", 400);
+        guest2 = new Guest("Billy", 400);
         guests = new ArrayList<>();
         bedrooms = new ArrayList<>();
         diningRooms = new ArrayList<>();
         conferenceRooms = new ArrayList<>();
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
+        bedroom2 = new Bedroom(guests, RoomTypes.SINGLE, 300);
         conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
         diningRoom = new DiningRoom(12, guests);
         hotel = new Hotel(bedrooms,conferenceRooms,diningRooms, 100000);
@@ -102,6 +106,7 @@ public class HotelTest {
     @Test
     public void canGetRoomByTypeThenAdd(){
         hotel.addBedroom(bedroom);
+        hotel.addBedroom(bedroom2);
         Bedroom availableRoom = hotel.getBedroomByType(RoomTypes.SINGLE);
         availableRoom.addGuest(guest);
         assertEquals(1, availableRoom.numberOfGuestsInRoom());
