@@ -24,4 +24,11 @@ public class ConferenceRoom extends Room {
         return name;
     }
 
+    public void setName (String roomName) {
+        this.name = roomName;
+    }
+
+    public void setDailyRate(int dailyRate) {
+        this.dailyRate = dailyRate;
+    }
 }

@@ -46,4 +46,18 @@ public class ConferenceRoomTest {
     public void canGetDailyRate() {
         assertEquals(150, conferenceRoom.getDailyRate(), 0.01);
     }
+
+    @Test
+    public void canSetRoomName() {
+        conferenceRoom.setName("Bush Room");
+        assertEquals("Bush Room", conferenceRoom.getName());
+    }
+
+    @Test
+    public void canSetDailyRate() {
+        conferenceRoom.setDailyRate(200);
+        assertEquals(200, conferenceRoom.getDailyRate(), 0.01);
+    }
+
+
 }
