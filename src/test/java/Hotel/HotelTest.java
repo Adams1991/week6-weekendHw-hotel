@@ -45,6 +45,19 @@ public class HotelTest {
         assertEquals(100000, hotel.getTakings(), 0.01);
     }
 
+    @Test
+    public void canGetBedrooms(){
+        assertEquals(bedrooms, hotel.getBedrooms());
+    }
 
+    @Test
+    public void canGetDiningRooms(){
+        assertEquals(bedrooms, hotel.getBedrooms());
+    }
+
+    @Test
+    public void canGetConferenceRooms(){
+        assertEquals(bedrooms, hotel.getBedrooms());
+    }
 
 }

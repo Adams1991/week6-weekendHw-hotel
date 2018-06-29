@@ -24,4 +24,8 @@ public class Hotel {
     public double getTakings() {
         return takings;
     }
+
+    public ArrayList<Bedroom> getBedrooms() {
+        return bedrooms;
+    }
 }
