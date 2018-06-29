@@ -104,6 +104,13 @@ public class HotelTest {
     }
 
     @Test
+    public void canGetBedroomByTypeOnlyIfNotFull(){
+        bedroom.addGuest(guest);
+        hotel.addBedroom(bedroom);
+        assertEquals(null, hotel.getBedroomByType(RoomTypes.SINGLE));
+    }
+
+    @Test
     public void canGetRoomByTypeThenAdd(){
         hotel.addBedroom(bedroom);
         hotel.addBedroom(bedroom2);
@@ -111,6 +118,8 @@ public class HotelTest {
         availableRoom.addGuest(guest);
         assertEquals(1, availableRoom.numberOfGuestsInRoom());
     }
+
+
 
 
 
