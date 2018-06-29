@@ -9,16 +9,21 @@ import java.util.ArrayList;
 import static org.junit.Assert.*;
 
 public class ConferenceRoomTest {
-
+    ArrayList<Guest> guests;
     ConferenceRoom conferenceRoom;
     Guest guest;
 
     @Before
     public void setUp() {
         guest = new Guest();
-        ArrayList<Guest> guests = new ArrayList<>();
+        guests = new ArrayList<>();
         guests.add(guest);
-       conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
+        conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
+    }
+
+    @Test
+    public void canGetGuestsInRoom() {
+        assertEquals(guests, conferenceRoom.getGuests());
     }
     
     @Test
