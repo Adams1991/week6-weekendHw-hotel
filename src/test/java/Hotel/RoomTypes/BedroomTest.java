@@ -47,6 +47,17 @@ public class BedroomTest {
         assertEquals(30.00, bedroom.getNightlyRate(), 0.01);
     }
 
+    @Test
+    public void canGetRoomType() {
+        assertEquals(RoomTypes.SINGLE, bedroom.getRoomType());
+    }
+
+    @Test
+    public void canSetRoomType() {
+        bedroom.setRoomType(RoomTypes.DOUBLE);
+        assertEquals(RoomTypes.DOUBLE, bedroom.getRoomType());
+    }
+
 
 
 

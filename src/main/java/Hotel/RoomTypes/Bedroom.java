@@ -20,4 +20,12 @@ public class Bedroom extends Room {
     public double getNightlyRate() {
         return nightlyRate;
     }
+
+    public RoomTypes getRoomType() {
+        return roomType;
+    }
+
+    public void setRoomType(RoomTypes roomType) {
+        this.roomType = roomType;
+    }
 }
