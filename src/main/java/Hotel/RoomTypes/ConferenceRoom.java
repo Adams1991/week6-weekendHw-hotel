@@ -12,9 +12,16 @@ public class ConferenceRoom extends Room {
 
     public ConferenceRoom(int capacity, ArrayList<Guest> guests, String name, double dailyRate) {
         super(capacity, guests);
-        name = this.name;
-        dailyRate = this.dailyRate;
+        this.name = name;
+        this.dailyRate = dailyRate;
     }
 
+    public double getDailyRate() {
+        return dailyRate;
+    }
+
+    public String getName() {
+        return name;
+    }
 
 }

@@ -13,7 +13,7 @@ public abstract class Room {
         this.guests = guests;
     }
 
-    public int numberOfGuestsinRoom() {
+    public int numberOfGuestsInRoom() {
         return guests.size();
     }
 

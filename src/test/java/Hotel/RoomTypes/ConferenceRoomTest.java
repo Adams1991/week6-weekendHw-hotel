@@ -22,8 +22,8 @@ public class ConferenceRoomTest {
     }
     
     @Test
-    public void canGetNumberOfGuestsinRoom() {
-        assertEquals(1, conferenceRoom.numberOfGuestsinRoom());
+    public void canGetNumberOfGuestsInRoom() {
+        assertEquals(1, conferenceRoom.numberOfGuestsInRoom());
     }
 
     @Test
@@ -35,5 +35,15 @@ public class ConferenceRoomTest {
     public void canSetCapacity() {
         conferenceRoom.setCapacity(14);
         assertEquals(14, conferenceRoom.getCapacity());
+    }
+
+    @Test
+    public void canGetRoomName() {
+        assertEquals("Bezo Room", conferenceRoom.getName());
+    }
+
+    @Test
+    public void canGetDailyRate() {
+        assertEquals(150, conferenceRoom.getDailyRate(), 0.01);
     }
 }
