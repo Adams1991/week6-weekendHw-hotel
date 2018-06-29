@@ -64,5 +64,12 @@ public class ConferenceRoomTest {
         assertEquals(200, conferenceRoom.getDailyRate(), 0.01);
     }
 
+    @Test
+    public void canAddGuest() {
+        conferenceRoom.addGuest(guest);
+        assertEquals(2, conferenceRoom.numberOfGuestsInRoom());
+
+    }
+
 
 }

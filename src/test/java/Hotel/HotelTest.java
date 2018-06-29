@@ -100,7 +100,7 @@ public class HotelTest {
     }
 
     @Test
-    public void canAddGuestToRoom(){
+    public void canGetRoomByTypeThenAdd(){
         hotel.addBedroom(bedroom);
         Bedroom availableRoom = hotel.getBedroomByType(RoomTypes.SINGLE);
         availableRoom.addGuest(guest);
