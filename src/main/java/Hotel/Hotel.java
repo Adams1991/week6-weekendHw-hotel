@@ -3,6 +3,7 @@ package Hotel;
 import Hotel.RoomTypes.Bedroom;
 import Hotel.RoomTypes.ConferenceRoom;
 import Hotel.RoomTypes.DiningRoom;
+import Hotel.RoomTypes.RoomTypes;
 
 import java.util.ArrayList;
 
@@ -54,4 +55,22 @@ public class Hotel {
     public void addConferenceRoom(ConferenceRoom conferenceRoom) {
         conferenceRooms.add(conferenceRoom);
     }
+
+    public Bedroom getBedroomByType(RoomTypes roomType) {
+        Bedroom availableRoom = null;
+        for (Bedroom bedroom : bedrooms) {
+            if (bedroom.getRoomType() == roomType)
+                availableRoom = bedroom;
+        }
+        return availableRoom;
+    }
+
+
+
+
+
+
+
+
+
 }

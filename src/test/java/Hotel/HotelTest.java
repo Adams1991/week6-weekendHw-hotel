@@ -93,6 +93,12 @@ public class HotelTest {
         assertEquals(1, hotel.getAmountOfConferenceRooms());
     }
 
+    @Test
+    public void canGetBedroomByType(){
+        hotel.addBedroom(bedroom);
+        assertEquals(bedroom, hotel.getBedroomByType(RoomTypes.SINGLE));
+    }
+
 
 
 }
