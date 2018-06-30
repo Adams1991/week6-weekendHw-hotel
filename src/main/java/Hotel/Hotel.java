@@ -111,4 +111,8 @@ public class Hotel {
         }
         return foundRoom;
     }
+
+    public String GuestsinBedroom(int roomNumber) {
+        return GetBedroomByNumber(roomNumber).guestsNamesInRoom();
+    }
 }

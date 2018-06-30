@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70f4ba01-ae0a-4687-8a55-f5cf305be203" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Hotel/Hotel.class" afterPath="$PROJECT_DIR$/out/production/classes/Hotel/Hotel.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/Hotel/HotelTest.class" afterPath="$PROJECT_DIR$/out/test/classes/Hotel/HotelTest.class" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" afterPath="$PROJECT_DIR$/src/main/java/Hotel/Hotel.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Hotel/HotelTest.java" afterPath="$PROJECT_DIR$/src/test/java/Hotel/HotelTest.java" />
     </list>
@@ -28,8 +25,8 @@
       <file leaf-file-name="Hotel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+            <state relative-caret-position="506">
+              <caret line="115" column="66" lean-forward="false" selection-start-line="115" selection-start-column="66" selection-end-line="115" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#809#810#0" expanded="true" />
@@ -56,8 +53,8 @@
       <file leaf-file-name="HotelTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Hotel/HotelTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="349">
-              <caret line="148" column="51" lean-forward="true" selection-start-line="148" selection-start-column="51" selection-end-line="148" selection-end-column="51" />
+            <state relative-caret-position="482">
+              <caret line="155" column="45" lean-forward="true" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
               <folding>
                 <element signature="e#1288#1289#0" expanded="true" />
                 <element signature="e#1350#1351#0" expanded="true" />
@@ -94,11 +91,12 @@
       <find>diningRoom</find>
       <find>diningRomm</find>
       <find>Bedroom</find>
+      <find>conferenceRoom</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace>diningRoom</replace>
       <replace>conferenceRoom</replace>
+      <replace>diningRoom</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java/Hotel</dir>
@@ -795,9 +793,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_weekendHWHotel_test - 2018.06.30 at 12h 30m 38s.xml">
-      <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_weekendHWHotel_test - 2018.06.30 at 12h 32m 04s.xml">
       <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
     </history-entry>
@@ -825,6 +820,9 @@
     <history-entry file="All_in_weekendHWHotel_test - 2018.06.30 at 13h 22m 39s.xml">
       <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_weekendHWHotel_test - 2018.06.30 at 13h 24m 46s.xml">
+      <configuration name="All in weekendHWHotel_test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -839,7 +837,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -1048,8 +1046,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Hotel/HotelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="148" column="51" lean-forward="true" selection-start-line="148" selection-start-column="51" selection-end-line="148" selection-end-column="51" />
+        <state relative-caret-position="482">
+          <caret line="155" column="45" lean-forward="true" selection-start-line="155" selection-start-column="45" selection-end-line="155" selection-end-column="45" />
           <folding>
             <element signature="e#1288#1289#0" expanded="true" />
             <element signature="e#1350#1351#0" expanded="true" />
@@ -1071,8 +1069,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Hotel/Hotel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="110" column="9" lean-forward="true" selection-start-line="110" selection-start-column="9" selection-end-line="110" selection-end-column="9" />
+        <state relative-caret-position="506">
+          <caret line="115" column="66" lean-forward="false" selection-start-line="115" selection-start-column="66" selection-end-line="115" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />

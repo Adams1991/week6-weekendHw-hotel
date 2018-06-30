@@ -149,6 +149,14 @@ public class HotelTest {
         assertEquals(diningRoom, hotel.GetDiningRoomByName("Main"));
     }
 
+    @Test
+    public void canGetGuestListBedroom(){
+        bedroom.addGuest(guest);
+        hotel.addBedroom(bedroom);
+        assertEquals("[Bob]", hotel.GuestsinBedroom(300));
+
+    }
+
 
 
 
