@@ -13,10 +13,12 @@ public class BedroomTest {
     Bedroom bedroom;
     Bedroom bedroom2;
     Guest guest;
+    Guest guest2;
 
     @Before
     public void setUp() {
         guest = new Guest("Bob", 500);
+        guest2 = new Guest("Billy", 500);
         guests = new ArrayList<>();
         guests.add(guest);
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
@@ -90,8 +92,14 @@ public class BedroomTest {
     }
 
     @Test
-    public void canGetNamesInRoom(){
+    public void canGetNameInRoom(){
         assertEquals("[Bob]", bedroom.guestsNamesInRoom());
+    }
+
+    @Test
+    public void canGetNamesInRoom(){
+        bedroom.addGuest(guest2);
+        assertEquals("[Bob, Billy]", bedroom.guestsNamesInRoom());
     }
 
 
