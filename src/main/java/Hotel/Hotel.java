@@ -112,7 +112,28 @@ public class Hotel {
         return foundRoom;
     }
 
-    public String GuestsinBedroom(int roomNumber) {
+    public String guestsInBedroom(int roomNumber) {
         return GetBedroomByNumber(roomNumber).guestsNamesInRoom();
+    }
+
+    public String guestsInConferenceRoom(String roomName) {
+        return GetConferenceRoomByName(roomName).guestsNamesInRoom();
+    }
+
+    public String guestsInDiningRoom(String roomName) {
+        return GetDiningRoomByName(roomName).guestsNamesInRoom();
+    }
+
+    public void addGuestToBedroom(RoomTypes roomType, Guest guest) {
+        getBedroomByTypeForBooking(roomType).addGuest(guest);
+    }
+
+
+    public void addGuestToConferenceRoom(String roomName, Guest guest) {
+        getConferenceRoomByNameForBooking(roomName).addGuest(guest);
+    }
+
+    public void addGuestToDiningRoom(String roomName, Guest guest) {
+        getDiningRoomByNameForBooking(roomName).addGuest(guest);
     }
 }

@@ -111,7 +111,7 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetRoomByTypeThenAdd(){
+    public void canGetRoomByTypeThenAddViaRoom(){
         hotel.addBedroom(bedroom);
         hotel.addBedroom(bedroom2);
         Bedroom availableRoom = hotel.getBedroomByTypeForBooking(RoomTypes.SINGLE);
@@ -153,8 +153,45 @@ public class HotelTest {
     public void canGetGuestListBedroom(){
         bedroom.addGuest(guest);
         hotel.addBedroom(bedroom);
-        assertEquals("[Bob]", hotel.GuestsinBedroom(300));
+        assertEquals("[Bob]", hotel.guestsInBedroom(300));
 
+    }
+
+    @Test
+    public void canGetGuestListConferenceRoom(){
+        conferenceRoom.addGuest(guest);
+        hotel.addConferenceRoom(conferenceRoom);
+        assertEquals("[Bob]", hotel.guestsInConferenceRoom("Bezo Room"));
+
+    }
+
+    @Test
+    public void canGetGuestListDiningRoom(){
+        diningRoom.addGuest(guest);
+        hotel.addDiningRoom(diningRoom);
+        assertEquals("[Bob]", hotel.guestsInDiningRoom("Main"));
+
+    }
+
+    @Test
+    public void canGetBedroomByTypeThenAdd(){
+        hotel.addBedroom(bedroom);
+        hotel.addGuestToBedroom(RoomTypes.SINGLE, guest);
+        assertEquals(1, bedroom.numberOfGuestsInRoom());
+    }
+
+    @Test
+    public void canGetConferenceByNameThenAdd(){
+        hotel.addConferenceRoom(conferenceRoom);
+        hotel.addGuestToConferenceRoom("Bezo Room", guest);
+        assertEquals(1, conferenceRoom.numberOfGuestsInRoom());
+    }
+
+    @Test
+    public void canGetDiningRoomByNameThenAdd(){
+        hotel.addDiningRoom(diningRoom);
+        hotel.addGuestToDiningRoom("Main", guest);
+        assertEquals(1, bedroom.numberOfGuestsInRoom());
     }
 
 
