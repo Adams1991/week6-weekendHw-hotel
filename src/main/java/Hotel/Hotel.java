@@ -67,6 +67,12 @@ public class Hotel {
     }
 
 
-
-
+    public ConferenceRoom getConferenceRoomByName(String roomName) {
+        ConferenceRoom availableRoom = null;
+        for (ConferenceRoom conferenceRoom : conferenceRooms) {
+            if (conferenceRoom.getName() == roomName && !conferenceRoom.isBooked())
+                availableRoom = conferenceRoom;
+        }
+        return availableRoom;
+    }
 }

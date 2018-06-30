@@ -104,7 +104,7 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetBedroomByTypeOnlyIfNotFull(){
+    public void canGetBedroomByTypeOnlyIfNotBooked(){
         bedroom.addGuest(guest);
         hotel.addBedroom(bedroom);
         assertEquals(null, hotel.getBedroomByType(RoomTypes.SINGLE));
@@ -117,6 +117,12 @@ public class HotelTest {
         Bedroom availableRoom = hotel.getBedroomByType(RoomTypes.SINGLE);
         availableRoom.addGuest(guest);
         assertEquals(1, availableRoom.numberOfGuestsInRoom());
+    }
+
+    @Test
+    public void canGetConferenceRoomByName(){
+        hotel.addConferenceRoom(conferenceRoom);
+        assertEquals(conferenceRoom, hotel.getConferenceRoomByName("Bezo Room"));
     }
 
 
