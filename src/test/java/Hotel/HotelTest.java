@@ -132,6 +132,14 @@ public class HotelTest {
     }
 
 
+//    @Test
+//    public void canGetBedroomByGuestName(){
+//        bedroom.addGuest(guest);
+//        hotel.addBedroom(bedroom);
+//
+//    }
+
+
 
 
 
