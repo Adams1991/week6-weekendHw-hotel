@@ -75,4 +75,13 @@ public class Hotel {
         }
         return availableRoom;
     }
+
+    public DiningRoom getDiningRoomByName(String roomName) {
+        DiningRoom availableRoom = null;
+        for (DiningRoom diningRoom : diningRooms) {
+            if (diningRoom.getName() == roomName && !diningRoom.isFull())
+                availableRoom = diningRoom;
+        }
+        return availableRoom;
+    }
 }

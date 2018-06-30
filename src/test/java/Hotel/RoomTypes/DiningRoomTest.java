@@ -55,4 +55,10 @@ public class DiningRoomTest {
 
     }
 
+    @Test
+    public void canCheckIsFull(){
+        diningRoom.setCapacity(0);
+        assertEquals(true, diningRoom.isFull());
+    }
+
 }

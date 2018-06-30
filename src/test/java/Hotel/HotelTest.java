@@ -125,6 +125,12 @@ public class HotelTest {
         assertEquals(conferenceRoom, hotel.getConferenceRoomByName("Bezo Room"));
     }
 
+    @Test
+    public void canGetDiningRoomByName(){
+        hotel.addDiningRoom(diningRoom);
+        assertEquals(diningRoom, hotel.getDiningRoomByName("Main"));
+    }
+
 
 
 

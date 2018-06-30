@@ -19,4 +19,10 @@ public class DiningRoom extends Room {
     public String getName() {
         return name;
     }
+
+    public boolean isFull() {
+        boolean answer = false;
+        if (guests.size() > getCapacity()){answer = true;}
+        return answer;
+    }
 }
