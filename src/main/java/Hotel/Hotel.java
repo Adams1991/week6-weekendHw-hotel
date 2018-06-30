@@ -57,7 +57,7 @@ public class Hotel {
         conferenceRooms.add(conferenceRoom);
     }
 
-    public Bedroom getBedroomByType(RoomTypes roomType) {
+    public Bedroom getBedroomByTypeForBooking(RoomTypes roomType) {
         Bedroom availableRoom = null;
         for (Bedroom bedroom : bedrooms) {
             if (bedroom.getRoomType() == roomType && !bedroom.isBooked())
@@ -67,7 +67,7 @@ public class Hotel {
     }
 
 
-    public ConferenceRoom getConferenceRoomByName(String roomName) {
+    public ConferenceRoom getConferenceRoomByNameForBooking(String roomName) {
         ConferenceRoom availableRoom = null;
         for (ConferenceRoom conferenceRoom : conferenceRooms) {
             if (conferenceRoom.getName() == roomName && !conferenceRoom.isBooked())
@@ -76,7 +76,7 @@ public class Hotel {
         return availableRoom;
     }
 
-    public DiningRoom getDiningRoomByName(String roomName) {
+    public DiningRoom getDiningRoomByNameForBooking(String roomName) {
         DiningRoom availableRoom = null;
         for (DiningRoom diningRoom : diningRooms) {
             if (diningRoom.getName() == roomName && !diningRoom.isFull())
@@ -85,4 +85,30 @@ public class Hotel {
         return availableRoom;
     }
 
+    public Bedroom GetBedroomByNumber(int roomNumber) {
+        Bedroom foundRoom= null;
+        for (Bedroom bedroom : bedrooms) {
+            if (bedroom.getRoomNumber() == roomNumber)
+                foundRoom = bedroom;
+        }
+        return foundRoom;
+    }
+
+    public ConferenceRoom GetConferenceRoomByName(String roomName) {
+        ConferenceRoom foundRoom= null;
+        for (ConferenceRoom conferenceRoom : conferenceRooms) {
+            if (conferenceRoom.getName() == roomName)
+                foundRoom = conferenceRoom;
+        }
+        return foundRoom;
+    }
+
+    public DiningRoom GetDiningRoomByName(String roomName) {
+        DiningRoom foundRoom= null;
+        for (DiningRoom diningRoom : diningRooms) {
+            if (diningRoom.getName() == roomName)
+                foundRoom = diningRoom;
+        }
+        return foundRoom;
+    }
 }

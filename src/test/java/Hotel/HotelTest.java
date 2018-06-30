@@ -98,47 +98,56 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetBedroomByType(){
+    public void canGetBedroomByTypeForBooking(){
         hotel.addBedroom(bedroom);
-        assertEquals(bedroom, hotel.getBedroomByType(RoomTypes.SINGLE));
+        assertEquals(bedroom, hotel.getBedroomByTypeForBooking(RoomTypes.SINGLE));
     }
 
     @Test
     public void canGetBedroomByTypeOnlyIfNotBooked(){
         bedroom.addGuest(guest);
         hotel.addBedroom(bedroom);
-        assertEquals(null, hotel.getBedroomByType(RoomTypes.SINGLE));
+        assertEquals(null, hotel.getBedroomByTypeForBooking(RoomTypes.SINGLE));
     }
 
     @Test
     public void canGetRoomByTypeThenAdd(){
         hotel.addBedroom(bedroom);
         hotel.addBedroom(bedroom2);
-        Bedroom availableRoom = hotel.getBedroomByType(RoomTypes.SINGLE);
+        Bedroom availableRoom = hotel.getBedroomByTypeForBooking(RoomTypes.SINGLE);
         availableRoom.addGuest(guest);
         assertEquals(1, availableRoom.numberOfGuestsInRoom());
     }
 
     @Test
-    public void canGetConferenceRoomByName(){
+    public void canGetConferenceRoomByNameForBooking(){
         hotel.addConferenceRoom(conferenceRoom);
-        assertEquals(conferenceRoom, hotel.getConferenceRoomByName("Bezo Room"));
+        assertEquals(conferenceRoom, hotel.getConferenceRoomByNameForBooking("Bezo Room"));
+    }
+
+    @Test
+    public void canGetDiningRoomByNameForBooking(){
+        hotel.addDiningRoom(diningRoom);
+        assertEquals(diningRoom, hotel.getDiningRoomByNameForBooking("Main"));
+    }
+
+    @Test
+    public void canGetBedroomByNumber(){
+        hotel.addBedroom(bedroom);
+        assertEquals(bedroom, hotel.GetBedroomByNumber(300));
+    }
+
+    @Test
+    public void canGetConferenceRoomByName(){
+        hotel.addConferenceRoom((conferenceRoom));
+        assertEquals(conferenceRoom, hotel.GetConferenceRoomByName("Bezo Room"));
     }
 
     @Test
     public void canGetDiningRoomByName(){
         hotel.addDiningRoom(diningRoom);
-        assertEquals(diningRoom, hotel.getDiningRoomByName("Main"));
+        assertEquals(diningRoom, hotel.GetDiningRoomByName("Main"));
     }
-
-
-//    @Test
-//    public void canGetBedroomByGuestName(){
-//        bedroom.addGuest(guest);
-//        hotel.addBedroom(bedroom);
-//
-//    }
-
 
 
 
