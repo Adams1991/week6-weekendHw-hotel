@@ -45,12 +45,10 @@ public abstract class Room {
         guests.clear();
     }
 
-    public ArrayList<String> guestsNamesInRoom(){
-        ArrayList<String> nameArray = null;
-        for ( Guest guest : guests) {
-            nameArray.add(guest.getName());
-        }
-        return nameArray;
+    public String guestsNamesInRoom(){
+        ArrayList<String> nameArray = new ArrayList<String>();
+        for ( Guest guest : guests) nameArray.add(guest.getName());
+        return nameArray.toString();
     }
 
 }

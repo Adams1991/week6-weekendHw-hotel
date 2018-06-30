@@ -89,6 +89,11 @@ public class BedroomTest {
         assertEquals(0, bedroom.numberOfGuestsInRoom() );
     }
 
+    @Test
+    public void canGetNamesInRoom(){
+        assertEquals("[Bob]", bedroom.guestsNamesInRoom());
+    }
+
 
 
 
