@@ -40,7 +40,7 @@ public class HotelTest {
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
         bedroom2 = new Bedroom(guests, RoomTypes.SINGLE, 300);
         conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
-        diningRoom = new DiningRoom(12, guests);
+        diningRoom = new DiningRoom(12, guests, "Main");
         hotel = new Hotel(bedrooms,conferenceRooms,diningRooms, 100000);
     }
 

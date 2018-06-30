@@ -18,7 +18,7 @@ public class DiningRoomTest {
         guest = new Guest("Bob", 500);
         guests = new ArrayList<>();
         guests.add(guest);
-        diningRoom = new DiningRoom(12, guests);
+        diningRoom = new DiningRoom(12, guests, "Main");
     }
 
     @Test
@@ -46,6 +46,12 @@ public class DiningRoomTest {
     public void canAddGuest() {
         diningRoom.addGuest(guest);
         assertEquals(2, diningRoom.numberOfGuestsInRoom());
+
+    }
+
+    @Test
+    public void canGetName() {
+        assertEquals("Main", diningRoom.getName());
 
     }
 
