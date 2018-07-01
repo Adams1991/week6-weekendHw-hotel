@@ -8,6 +8,7 @@ import Hotel.RoomTypes.RoomTypes;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static org.junit.Assert.*;
@@ -38,7 +39,7 @@ public class HotelTest {
         diningRooms = new ArrayList<>();
         conferenceRooms = new ArrayList<>();
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
-        bedroom2 = new Bedroom(guests, RoomTypes.SINGLE, 300);
+        bedroom2 = new Bedroom(guests, RoomTypes.SINGLE, 310);
         conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
         diningRoom = new DiningRoom(12, guests, "Main");
         hotel = new Hotel(bedrooms,conferenceRooms,diningRooms, 100000);
@@ -192,6 +193,13 @@ public class HotelTest {
         hotel.addDiningRoom(diningRoom);
         hotel.addGuestToDiningRoom("Main", guest);
         assertEquals(1, bedroom.numberOfGuestsInRoom());
+    }
+
+    @Test
+    public void canGetVacantBedroomsByRoomNumber(){
+        hotel.addBedroom(bedroom);
+        hotel.addBedroom(bedroom2);
+        assertEquals("[300, 310]", hotel.getVacantBedrooms());
     }
 
 

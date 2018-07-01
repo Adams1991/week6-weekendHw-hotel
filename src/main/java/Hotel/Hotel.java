@@ -136,4 +136,13 @@ public class Hotel {
     public void addGuestToDiningRoom(String roomName, Guest guest) {
         getDiningRoomByNameForBooking(roomName).addGuest(guest);
     }
+
+    public String getVacantBedrooms() {
+        ArrayList<Integer> vacantRooms = new ArrayList<>();
+        for (Bedroom bedroom : bedrooms) {
+            if (!bedroom.isBooked())
+                vacantRooms.add(bedroom.getRoomNumber());
+        }
+        return vacantRooms.toString();
+    }
 }
