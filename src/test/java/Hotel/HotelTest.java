@@ -39,7 +39,7 @@ public class HotelTest {
         diningRooms = new ArrayList<>();
         conferenceRooms = new ArrayList<>();
         bedroom = new Bedroom(guests, RoomTypes.SINGLE, 300);
-        bedroom2 = new Bedroom(guests, RoomTypes.SINGLE, 310);
+        bedroom2 = new Bedroom(new ArrayList<>(), RoomTypes.SINGLE, 310);
         conferenceRoom = new ConferenceRoom(50, guests, "Bezo Room", 150);
         diningRoom = new DiningRoom(12, guests, "Main");
         hotel = new Hotel(bedrooms,conferenceRooms,diningRooms, 100000);
@@ -196,10 +196,11 @@ public class HotelTest {
     }
 
     @Test
-    public void canGetVacantBedroomsByRoomNumber(){
+    public void canGetVacantBedroomsRoomNumber(){
+        bedroom.addGuest(guest);
         hotel.addBedroom(bedroom);
         hotel.addBedroom(bedroom2);
-        assertEquals("[300, 310]", hotel.getVacantBedrooms());
+        assertEquals("[310]", hotel.getVacantBedrooms());
     }
 
 
